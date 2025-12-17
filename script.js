@@ -13,9 +13,13 @@ console.log(add(5,4));
 
 document.getElementById("text").innerText ="Javascript is working !";
 */
-const message = document.getElementById("message");
-const button =document.getElementById("btn");
+// const message = document.getElementById("message");
+// const button =document.getElementById("btn");
 
-button.addEventListener("click", () => {
-    message.innerText = "button clicked successfully";
-});
+// button.addEventListener("click", () => {
+//     message.innerText = "button clicked successfully";
+// });
+
+function changecolor() {
+    document.body.style.backgroundColor ="lightgreen";
+}
