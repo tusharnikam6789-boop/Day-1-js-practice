@@ -1,1 +1,1 @@
-# Day-1-js-practice
+# Day-2-js-practice
