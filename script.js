@@ -20,6 +20,33 @@ document.getElementById("text").innerText ="Javascript is working !";
 //     message.innerText = "button clicked successfully";
 // });
 
-function changecolor() {
-    document.body.style.backgroundColor ="lightgreen";
-}
+// function changecolor() {
+//     document.body.style.backgroundColor ="lightgreen";
+// }
+
+const btn =
+document.getElementById("btn");
+const heading =
+document.getElementById("heading");
+const countText =
+document.getElementById("count")
+
+let count =0;
+let isGreen = false;
+
+btn.addEventListener("click", function (){
+
+    count =count + 1;
+    countText.innerText ="clicked: "+ count + "times";
+    if (isGreen ===false){
+        heading.style.color ="green";
+        heading.innerText ="Button Clicked!";
+        isGreen = true;
+    }   else{
+        heading.style.color ="red";
+        heading.innerText ="Click Again!";
+        isGreen = false;
+    }
+
+})
+
