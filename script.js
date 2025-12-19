@@ -23,7 +23,7 @@ document.getElementById("text").innerText ="Javascript is working !";
 // function changecolor() {
 //     document.body.style.backgroundColor ="lightgreen";
 // }
-
+/*
 const btn =
 document.getElementById("btn");
 const heading =
@@ -49,4 +49,27 @@ btn.addEventListener("click", function (){
     }
 
 })
+*/
+let count = 0;
 
+const clickBtn =
+document.getElementById("btn");
+const resetBtn =
+document.getElementById("resetBtn");
+const text =
+document.getElementById("count");
+
+clickBtn.addEventListener("click", ()=>  {
+    count =count+1;
+    text.innerText = "Clicked:" +  count  + "times" ;
+    if(count >=5){
+        text.innerText ="Click Again!";
+        document.body.style.backgroundColor ="#d1ffd6";
+
+    }
+});
+resetBtn.addEventListener("click",function (){
+    count =0;
+    text.innerText ="Clicked: 0 times";
+    document.body.style.backgroundColor ="#f4f4f4"
+})
